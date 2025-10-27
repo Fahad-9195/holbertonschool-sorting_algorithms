@@ -16,11 +16,14 @@ typedef struct listint_s
 	struct listint_s *next;
 } listint_t;
 
-/* Prototypes provided/required by the project */
+/* Prototypes provided by the checker */
+void print_array(const int *array, size_t size);
 void print_list(const listint_t *list);
 
-/* Task 1 */
+/* Sorting algorithms */
+void bubble_sort(int *array, size_t size);
 void insertion_sort_list(listint_t **list);
+void selection_sort(int *array, size_t size);
+void quick_sort(int *array, size_t size);
 
 #endif /* SORT_H */
-
